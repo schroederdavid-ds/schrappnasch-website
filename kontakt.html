@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Schrappnasch kontaktieren – Angebot anfragen, Fragen stellen, Termin vereinbaren. Wir melden uns schnell zurück.">
+  <title>Kontakt – Schrappnasch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html">
+        <img src="Resources/schrappnasch_logo_final.svg"
+             alt="Schrappnasch – Wir kümmern uns drum."
+             class="nav__logo">
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#leistungen" class="nav__link">Leistungen</a></li>
+        <li><a href="ueber-uns.html"        class="nav__link">Über uns</a></li>
+        <li><a href="kontakt.html"          class="nav__link nav__link--active">Kontakt</a></li>
+        <li class="nav__cta">
+          <a href="kontakt.html" class="btn btn--primary btn--sm">Angebot anfragen</a>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="navToggle"
+              aria-label="Menü öffnen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <section class="hero">
+      <div class="container">
+        <span class="section-header__label">Kontakt</span>
+        <h1 style="margin-top: 0.5rem;">Sprechen Sie uns an.</h1>
+        <p class="hero__subtitle">
+          Schildern Sie uns kurz Ihr Anliegen — wir melden uns
+          innerhalb eines Werktages mit einem Angebot zurück.
+        </p>
+      </div>
+    </section>
+
+    <!-- KONTAKT-INHALT -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--2" style="align-items: start; gap: 3rem;">
+
+          <!-- FORMULAR -->
+          <div>
+            <h2 style="margin-bottom: 1.5rem;">Nachricht schreiben</h2>
+
+            <!--
+              action="mailto:" öffnet den Mail-Client des Besuchers.
+              Für serverseitigen Versand muss dieses Formular
+              später an ein Backend oder einen Formular-Dienst
+              angebunden werden.
+            -->
+            <form class="form"
+                  action="mailto:schroeder.david.ds@gmail.com"
+                  method="post"
+                  enctype="text/plain">
+
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label form__label--required" for="vorname">
+                    Vorname
+                  </label>
+                  <input class="form__input" type="text" id="vorname"
+                         name="Vorname" placeholder="Max" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label form__label--required" for="nachname">
+                    Nachname
+                  </label>
+                  <input class="form__input" type="text" id="nachname"
+                         name="Nachname" placeholder="Mustermann" required>
+                </div>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label form__label--required" for="email">
+                  E-Mail-Adresse
+                </label>
+                <input class="form__input" type="email" id="email"
+                       name="E-Mail" placeholder="max@beispiel.de" required>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label" for="telefon">
+                  Telefon <span style="font-weight:400; color: var(--grey-mid);">(optional)</span>
+                </label>
+                <input class="form__input" type="tel" id="telefon"
+                       name="Telefon" placeholder="+49 176-56770853">
+              </div>
+
+              <div class="form__group">
+                <label class="form__label form__label--required" for="leistung">
+                  Leistung
+                </label>
+                <select class="form__select" id="leistung" name="Leistung" required>
+                  <option value="" disabled selected>Bitte wählen …</option>
+                  <option value="Gartenservice">Gartenservice</option>
+                  <option value="Entruempelung">Entrümpelung</option>
+                  <option value="Gebaeudereinigung">Gebäudereinigung</option>
+                  <option value="Sonstiges">Sonstiges</option>
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label class="form__label form__label--required" for="nachricht">
+                  Nachricht
+                </label>
+                <textarea class="form__textarea" id="nachricht"
+                          name="Nachricht"
+                          placeholder="Beschreiben Sie kurz, was anliegt …"
+                          required></textarea>
+                <span class="form__hint">* Pflichtfelder</span>
+              </div>
+
+              <div>
+                <button type="submit" class="btn btn--primary btn--lg">
+                  Nachricht senden
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- KONTAKTINFO -->
+          <div>
+            <h2 style="margin-bottom: 1.5rem;">Direkt erreichbar</h2>
+
+            <div class="card" style="margin-bottom: var(--sp-md);">
+              <p class="card__tag">E-Mail</p>
+              <p style="margin-top: 0.5rem;">
+                <a href="mailto:schroeder.david.ds@gmail.com"
+                   style="color: var(--green-dark); font-weight: 600;">
+                  schroeder.david.ds@gmail.com
+                </a>
+              </p>
+              <p class="card__body" style="margin-top: 0.25rem;">
+                Wir antworten innerhalb eines Werktages.
+              </p>
+            </div>
+
+            <div class="card" style="margin-bottom: var(--sp-md);">
+              <p class="card__tag">Telefon</p>
+              <p style="margin-top: 0.5rem;">
+                <a href="tel:+4917656770853"
+                   style="color: var(--green-dark); font-weight: 600;">
+                  +49 176-56770853
+                </a>
+              </p>
+              <p class="card__body" style="margin-top: 0.25rem;">
+                Mo – Fr, 8 – 18 Uhr
+              </p>
+            </div>
+
+            <div class="card">
+              <p class="card__tag">Adresse</p>
+              <p style="margin-top: 0.5rem; font-weight: 600; color: var(--text-primary);">
+                Schrappnasch<br>
+                Goldammerweg 6<br>
+                32051 Herford
+              </p>
+              <p class="card__body" style="margin-top: 0.25rem;">
+                Kein Publikumsverkehr — wir kommen zu Ihnen.
+              </p>
+            </div>
+
+            <div class="placeholder-img" style="height: 180px; border-radius: 8px; margin-top: var(--sp-md);">
+              Karte / Anfahrt
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__brand">
+          <img src="Resources/schrappnasch_logo_final.svg"
+               alt="Schrappnasch"
+               class="footer__logo">
+          <p>Verlässlicher Rundum-Service<br>rund um Haus und Garten.</p>
+        </div>
+
+        <div>
+          <p class="footer__heading">Leistungen</p>
+          <ul class="footer__links">
+            <li><a href="gartenservice.html"     class="footer__link">Gartenservice</a></li>
+            <li><a href="entruempelung.html"     class="footer__link">Entrümpelung</a></li>
+            <li><a href="gebaeudereinigung.html" class="footer__link">Gebäudereinigung</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__heading">Kontakt</p>
+          <ul class="footer__links">
+            <li><a href="mailto:schroeder.david.ds@gmail.com" class="footer__link">schroeder.david.ds@gmail.com</a></li>
+            <li><a href="tel:+4917656770853"                  class="footer__link">+49 176-56770853</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Schrappnasch. Alle Rechte vorbehalten.</span>
+        <span>
+          <a href="impressum.html"    class="footer__link">Impressum</a>
+          &nbsp;·&nbsp;
+          <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links  = document.getElementById('navLinks');
+
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+
+      links.querySelectorAll('.nav__link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          links.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }());
+  </script>
+
+</body>
+</html>

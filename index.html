@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Schrappnasch Dienstleister – Verlässlicher Rundum-Service rund um Haus und Garten. Wir kümmern uns drum.">
+  <title>Schrappnasch – Wir kümmern uns drum.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#">
+        <img src="Resources/schrappnasch_logo_final.svg"
+             alt="Schrappnasch – Wir kümmern uns drum."
+             class="nav__logo">
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#leistungen" class="nav__link">Leistungen</a></li>
+        <li><a href="#ueber-uns"  class="nav__link">Über uns</a></li>
+        <li><a href="#kontakt"    class="nav__link">Kontakt</a></li>
+        <li class="nav__cta">
+          <a href="#kontakt" class="btn btn--primary btn--sm">Angebot anfragen</a>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="navToggle"
+              aria-label="Menü öffnen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <h1>Wir kümmern uns drum.</h1>
+        <p class="hero__subtitle">
+          Verlässlicher Rundum-Service rund um Haus und Garten —
+          sauber, pünktlich und zu fairen Preisen.
+        </p>
+        <div class="hero__actions">
+          <a href="#leistungen" class="btn btn--primary btn--lg">Unsere Leistungen</a>
+          <a href="#kontakt"    class="btn btn--outline btn--lg">Kontakt aufnehmen</a>
+        </div>
+        <div style="margin-top:2.5rem;border-radius:8px;overflow:hidden;height:380px;">
+          <img src="Resources/images/gemaehte_wiese_echt.jpg"
+            alt="Frisch gemähte Wiese – Schrappnasch Gartenservice"
+            style="width:100%;height:100%;object-fit:cover;display:block;">
+        </div>
+      </div>
+    </section>
+
+    <!-- LEISTUNGEN -->
+    <section class="section section--alt" id="leistungen">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Was wir tun</span>
+          <h2 class="section-header__title">Unsere Leistungen</h2>
+          <p class="section-header__body">
+            Von der Gartenpflege bis zur Außenreinigung —
+            wir übernehmen die Aufgaben, für die andere keine Zeit haben.
+          </p>
+        </div>
+        <div class="grid grid--3">
+
+          <div class="card">
+            <div class="card__image" style="overflow:hidden;">
+              <img src="Resources/images/heckenschere_nahaufnahme.jpg"
+                alt="Heckenschere bei der Arbeit"
+                style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+            <span class="card__tag">Garten</span>
+            <h3 class="card__title">Gartenservice</h3>
+            <p class="card__body">
+              Rasenschnitt, Heckenpflege, Unkrautentfernung und mehr —
+              damit Ihr Garten immer gepflegt aussieht.
+            </p>
+            <a href="gartenservice.html" class="btn btn--outline btn--sm" style="margin-top: 1rem;">
+              Mehr erfahren &rarr;
+            </a>
+          </div>
+
+          <div class="card">
+            <div class="card__image" style="overflow:hidden;">
+              <img src="Resources/images/entsorgung_mulde.jpg"
+                alt="Entrümpelung – volle Mulde mit Sperrmüll"
+                style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+            <span class="card__tag">Entrümpelung</span>
+            <h3 class="card__title">Entrümpelung</h3>
+            <p class="card__body">
+              Keller, Dachboden, Wohnung oder Gewerbefläche —
+              wir räumen schnell, sauber und zuverlässig.
+            </p>
+            <a href="entruempelung.html" class="btn btn--outline btn--sm" style="margin-top: 1rem;">
+              Mehr erfahren &rarr;
+            </a>
+          </div>
+
+          <div class="card">
+            <div class="card__image" style="overflow:hidden;">
+              <img src="Resources/images/reinigung_fensterabzieher.jpg"
+                alt="Fensterreinigung mit Abzieher"
+                style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+            <span class="card__tag">Reinigung</span>
+            <h3 class="card__title">Gebäudereinigung</h3>
+            <p class="card__body">
+              Treppenhäuser, Büros, Außenflächen — sauber, regelmäßig
+              und zu verlässlichen Konditionen.
+            </p>
+            <a href="gebaeudereinigung.html" class="btn btn--outline btn--sm" style="margin-top: 1rem;">
+              Mehr erfahren &rarr;
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ÜBER UNS -->
+    <section class="section" id="ueber-uns">
+      <div class="container">
+        <div class="grid grid--2" style="align-items: center;">
+          <div>
+            <span class="section-header__label">Wer wir sind</span>
+            <h2 style="margin-bottom: 1rem;">Ein verlässlicher Partner in Ihrer Nähe</h2>
+            <p>
+              Schrappnasch ist ein lokaler Dienstleister mit einem einfachen Versprechen:
+              Wir kommen, wir arbeiten, wir hinterlassen Ordnung. Keine langen Wartezeiten,
+              keine Überraschungen bei der Rechnung.
+            </p>
+            <p>
+              Ob einmalige Aufgabe oder regelmäßiger Service — wir richten uns nach Ihren
+              Bedürfnissen und stimmen alles persönlich mit Ihnen ab.
+            </p>
+            <a href="#kontakt" class="btn btn--primary" style="margin-top: 1rem;">
+              Jetzt Kontakt aufnehmen
+            </a>
+          </div>
+          <div>
+            <div style="border-radius:8px;overflow:hidden;aspect-ratio:4/3;">
+              <img src="Resources/images/motorsense_pfeiler.png"
+                  alt="Schrappnasch im Einsatz – Motorsense am Pfeiler"
+                  style="width:100%;height:100%;object-fit:cover;display:block;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VORTEILE -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-header__label">Warum Schrappnasch</span>
+          <h2 class="section-header__title">Einfach. Verlässlich. Fair.</h2>
+        </div>
+        <div class="grid grid--4">
+          <div class="card text-center">
+            <h3 class="card__title" style="color: var(--green-dark);">Pünktlich</h3>
+            <p class="card__body">Wir halten Termine ein — ohne Erinnerung und ohne Ausrede.</p>
+          </div>
+          <div class="card text-center">
+            <h3 class="card__title" style="color: var(--green-dark);">Transparent</h3>
+            <p class="card__body">Klare Preise vorab, keine versteckten Kosten danach.</p>
+          </div>
+          <div class="card text-center">
+            <h3 class="card__title" style="color: var(--green-dark);">Lokal</h3>
+            <p class="card__body">Wir kommen aus der Region und kennen die Gegebenheiten vor Ort.</p>
+          </div>
+          <div class="card text-center">
+            <h3 class="card__title" style="color: var(--green-dark);">Flexibel</h3>
+            <p class="card__body">Einmalig oder regelmäßig — wir passen uns Ihrem Bedarf an.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="section" id="kontakt">
+      <div class="container text-center">
+        <span class="section-header__label">Kontakt</span>
+        <h2 style="margin-bottom: 1rem;">Bereit, wenn Sie es sind.</h2>
+        <p style="max-width: 480px; margin: 0 auto 2rem; color: var(--text-secondary);">
+          Schreiben Sie uns kurz, was anliegt —
+          wir melden uns schnell mit einem Angebot zurück.
+        </p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+          <a href="mailto:schroeder.david.ds@gmail.com" class="btn btn--primary btn--lg">
+            E-Mail schreiben
+          </a>
+          <a href="tel:+4917656770853" class="btn btn--outline btn--lg">
+            Anrufen
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__brand">
+          <img src="Resources/schrappnasch_logo_final.svg"
+               alt="Schrappnasch"
+               class="footer__logo">
+          <p>Verlässlicher Rundum-Service<br>rund um Haus und Garten.</p>
+        </div>
+
+        <div>
+          <p class="footer__heading">Leistungen</p>
+          <ul class="footer__links">
+            <li><a href="gartenservice.html"     class="footer__link">Gartenservice</a></li>
+            <li><a href="entruempelung.html"     class="footer__link">Entrümpelung</a></li>
+            <li><a href="gebaeudereinigung.html" class="footer__link">Gebäudereinigung</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__heading">Kontakt</p>
+          <ul class="footer__links">
+            <li><a href="mailto:schroeder.david.ds@gmail.com" class="footer__link">schroeder.david.ds@gmail.com</a></li>
+            <li><a href="tel:+4917656770853"                  class="footer__link">+49 176-56770853</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Schrappnasch. Alle Rechte vorbehalten.</span>
+        <span>
+          <a href="impressum.html"    class="footer__link">Impressum</a>
+          &nbsp;·&nbsp;
+          <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle — reines DOM, kein Netzwerkzugriff -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links  = document.getElementById('navLinks');
+
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+
+      links.querySelectorAll('.nav__link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          links.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }());
+  </script>
+
+</body>
+</html>

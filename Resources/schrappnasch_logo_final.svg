@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 210" width="240" height="210">
+
+  <!-- House walls -->
+  <rect x="45" y="80" width="150" height="75" fill="#c0c0c0"/>
+
+  <!-- Roof -->
+  <polygon points="120,20 35,80 205,80" fill="#b2b2b2"/>
+
+  <!-- Left window -->
+  <rect x="65" y="97" width="32" height="25" fill="#dce8f0" stroke="#a0a0a0" stroke-width="1.5"/>
+  <line x1="65" y1="109.5" x2="97" y2="109.5" stroke="#a0a0a0" stroke-width="1.5"/>
+  <line x1="81" y1="97" x2="81" y2="122" stroke="#a0a0a0" stroke-width="1.5"/>
+
+  <!-- Right window -->
+  <rect x="143" y="97" width="32" height="25" fill="#dce8f0" stroke="#a0a0a0" stroke-width="1.5"/>
+  <line x1="143" y1="109.5" x2="175" y2="109.5" stroke="#a0a0a0" stroke-width="1.5"/>
+  <line x1="159" y1="97" x2="159" y2="122" stroke="#a0a0a0" stroke-width="1.5"/>
+
+  <!-- Door -->
+  <rect x="104" y="118" width="32" height="37" rx="1" fill="#a8a8a8"/>
+
+  <!-- Left bush — sauber geschnitten, glatte Kuppel -->
+  <path d="M 48,165 C 48,145 80,132 120,140 L 120,165 Z" fill="#1c5412"/>
+
+  <!-- Right bush — ungeschnitten, zackig -->
+  <path d="M 120,165 L 120,140 L 127,124 L 133,137 L 140,120 L 147,133 L 153,118 L 160,130 L 167,122 L 173,137 L 192,165 Z" fill="#1c5412"/>
+
+  <!-- Trennlinie Busch -->
+  <line x1="120" y1="138" x2="120" y2="165" stroke="#0d320a" stroke-width="1"/>
+
+  <!-- Wordmark -->
+  <text x="120" y="187"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="17"
+        font-weight="700"
+        letter-spacing="2"
+        fill="#1a1a1a">SCHRAPPNASCH</text>
+
+  <!-- Tagline -->
+  <text x="120" y="205"
+        text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="11"
+        fill="#555555">Wir kümmern uns drum.</text>
+
+</svg>
