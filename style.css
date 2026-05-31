@@ -305,7 +305,7 @@ p:last-child { margin-bottom: 0; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--green-accent);
+  color: var(--green-dark);
   margin-bottom: var(--sp-sm);
 }
 
