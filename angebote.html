@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aktuelle Angebote von Schrappnasch Dienstleister — erster Dauerauftragsmonat 30 % günstiger für Gartenservice, Gebäudereinigung und Entrümpelung in Herford und Umgebung.">
+  <title>Aktuelle Angebote – Schrappnasch</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Cloudflare Web Analytics -->
+<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "2b2020b8afcb4c09b1f2dd87deec139b"}'></script>
+<!-- End Cloudflare Web Analytics -->
+ 
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html">
+        <img src="Resources/schrappnasch_logo_final.svg"
+             alt="Schrappnasch – Wir kümmern uns drum."
+             width="680" height="255"
+             class="nav__logo">
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html#leistungen" class="nav__link nav__link--active">Leistungen</a></li>
+        <li><a href="ueber-uns.html"        class="nav__link">Über uns</a></li>
+        <li><a href="kontakt.html"          class="nav__link">Kontakt</a></li>
+        <li class="nav__cta">
+          <a href="angebote.html" class="btn btn--primary btn--sm">Aktuelle Angebote</a>
+        </li>
+      </ul>
+      <button class="nav__toggle" id="navToggle"
+              aria-label="Menü öffnen" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="container">
+        <span class="section-header__label">Aktuelle Angebote</span>
+        <h1>Jetzt sparen — Dauerauftrag starten</h1>
+        <p class="hero__subtitle">
+          Erster Monat 30 % günstiger bei Abschluss
+          eines Dauerauftrags ab 3 Monaten Laufzeit —
+          für Gartenservice, Gebäudereinigung und Entrümpelung.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="card card--featured" style="max-width:600px; margin:0 auto;">
+          <span class="card__tag">Grünsaison 2026</span>
+          <h2 class="card__title">Dauerauftrag starten —
+            erster Monat 30 % günstiger</h2>
+          <p class="card__body">
+            Jetzt Dauerauftrag abschließen und im ersten Monat
+            30 % sparen. Gilt für alle Leistungen —
+            Gartenservice, Gebäudereinigung und Entrümpelung.
+            Einmalige Aufträge sind ausgeschlossen.
+          </p>
+          <p class="card__body" style="margin-top:0.5rem;">
+            Gültig bis 30. Juni 2026.
+            Mindestlaufzeit 3 Monate.
+          </p>
+          <a href="kontakt.html"
+            class="btn btn--primary"
+            style="margin-top:1rem;">
+            Jetzt Angebot anfragen
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container text-center">
+        <h2 style="margin-bottom:1rem;">
+          Weitere Angebote in Kürze
+        </h2>
+        <p style="max-width:480px; margin:0 auto;
+          color:var(--text-secondary);">
+          Wir erweitern unser Angebotsspektrum regelmäßig.
+          Melde dich jetzt und wir informieren dich
+          über neue Aktionen.
+        </p>
+        <a href="kontakt.html"
+          class="btn btn--outline"
+          style="margin-top:1.5rem;">
+          Kontakt aufnehmen
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+
+        <div class="footer__brand">
+          <img src="Resources/schrappnasch_logo_final.svg"
+               alt="Schrappnasch"
+               width="680" height="255"
+               class="footer__logo">
+          <p>Verlässlicher Service rund<br>um Haus und Garten</p>
+        </div>
+
+        <div>
+          <p class="footer__heading">Leistungen</p>
+          <ul class="footer__links">
+            <li><a href="gartenservice.html"     class="footer__link">Gartenservice</a></li>
+            <li><a href="entruempelung.html"     class="footer__link">Entrümpelung</a></li>
+            <li><a href="gebaeudereinigung.html" class="footer__link">Gebäudereinigung</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer__heading">Kontakt</p>
+          <ul class="footer__links">
+            <li><a href="mailto:schroeder.david.ds@gmail.com" class="footer__link">info@hausmeister-herford.de</a></li>
+            <li><a href="tel:+4917656770853"                  class="footer__link">+49 176-56770853</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__bottom">
+        <span>&copy; 2026 Schrappnasch. Alle Rechte vorbehalten.</span>
+        <span>
+          <a href="impressum.html"    class="footer__link">Impressum</a>
+          &nbsp;·&nbsp;
+          <a href="datenschutz.html" class="footer__link">Datenschutz</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    (function () {
+      var toggle = document.getElementById('navToggle');
+      var links  = document.getElementById('navLinks');
+
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+
+      links.querySelectorAll('.nav__link').forEach(function (link) {
+        link.addEventListener('click', function () {
+          links.classList.remove('is-open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }());
+  </script>
+
+</body>
+</html>
